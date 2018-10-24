@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "962134847990",
+    "firebase_url": "https://carapp-face4.firebaseio.com",
+    "project_id": "carapp-face4",
+    "storage_bucket": "carapp-face4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962134847990:android:6fb86ac375af5aa3",
+        "android_client_info": {
+          "package_name": "com.example.danie.carapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962134847990-gqq1uu1d17hrdfp0l9ng7r5rkmfhi3d8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.danie.carapp",
+            "certificate_hash": "a7f1f300e31164c22bde73766c1c491ba2107588"
+          }
+        },
+        {
+          "client_id": "962134847990-hp970m19c77qpkatgb30q26ul6e482d6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-Vi1gQ_v3LpDZi2xNpCxBQ11--U3bSKw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962134847990-hp970m19c77qpkatgb30q26ul6e482d6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
