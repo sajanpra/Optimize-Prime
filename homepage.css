@@ -1,0 +1,41 @@
+header h1{
+	color: green;
+	text-align: center;
+	margin: 0;
+}
+
+header p{
+	text-align: center;
+	color: red;
+	margin: 0;
+}
+
+.app p{
+	text-align: center;
+	border: 3px solid green;
+	margin-left: 50px;
+	border-radius: 50px;
+	margin-right: 50px;
+	
+}
+
+.app a{
+	text-decoration: none;
+	color: black;		
+}
+.app a:hover{
+	color: white;
+}
+
+.app p:hover{
+	background-color: green;
+	
+}
+
+.main {
+	background-color: lightgreen;
+	margin-left: 550px;
+	margin-right: 550px;
+	padding-bottom: 10px;
+	border: 10px solid green;
+}
