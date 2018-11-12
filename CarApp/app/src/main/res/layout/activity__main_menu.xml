@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_MainMenu">
+
+    <RelativeLayout
+        android:id="@+id/rellay_profile1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/grad_bg"
+        android:paddingBottom="20dp">
+
+        <RelativeLayout
+            android:id="@+id/imgUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circle_border">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="9dp"
+                android:padding="3dp"
+                android:background="@drawable/circle"
+                android:src="@drawable/ic_user"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgUser"
+            android:layout_centerHorizontal="true"
+            android:text="Joey Tribbiani"
+            android:textSize="32sp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="15sp"/>
+
+
+        <TextView
+            android:id="@+id/user_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_name"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="true"
+            android:text="new york, usa"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="15sp"/>
+
+        <Button
+            android:id="@+id/signout_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_settings"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"/>
+
+        <RelativeLayout
+            android:id="@+id/linlay_mainmenu1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/user_address"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="*"
+                android:gravity="center_vertical">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <RelativeLayout
+                        android:layout_column="0"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/mainmenu_button1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_place"
+                            android:layout_centerHorizontal="true"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/mainmenu_button1"
+                            android:paddingTop="15dp"
+                            android:text="Find Location"
+                            android:textColor="@color/white"
+                            android:gravity="center_horizontal"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_column="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/mainmenu_button2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/ic_account_100dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/mainmenu_button2"
+                            android:paddingTop="15dp"
+                            android:text="Profile"
+                            android:textColor="@color/white"
+                            android:gravity="center_horizontal"/>
+
+                    </RelativeLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:paddingTop="50dp">
+
+                    <RelativeLayout
+                        android:layout_column="0"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/mainmenu_button3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_settings_100dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/mainmenu_button3"
+                            android:paddingTop="15dp"
+                            android:text="Settings"
+                            android:textColor="@color/white"
+                            android:gravity="center_horizontal"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_column="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/mainmenu_button4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_help_outline_100dp"
+                            android:layout_centerHorizontal="true"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/mainmenu_button4"
+                            android:paddingTop="15dp"
+                            android:text="Help"
+                            android:textColor="@color/white"
+                            android:gravity="center_horizontal"/>
+
+                    </RelativeLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linlay_mainmenu1"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
