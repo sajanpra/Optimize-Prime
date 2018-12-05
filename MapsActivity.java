@@ -13,8 +13,11 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+import android.widget.ToggleButton;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
@@ -95,7 +98,26 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         // Build the map.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
+        assert mapFragment != null;
         mapFragment.getMapAsync(this);
+
+
+        ToggleButton toggle = findViewById(R.id.start_tracking_btn);
+        toggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    // The toggle is enabled
+                    Toast.makeText(MapsActivity.this,
+                            "Toggle Button is clicked " ,
+                            Toast.LENGTH_SHORT).show();
+                } else {
+                    // The toggle is disabled
+                    Toast.makeText(MapsActivity.this,
+                            "Unclicked! " ,
+                            Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
     }
 
