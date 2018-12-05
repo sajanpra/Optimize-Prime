@@ -32,10 +32,6 @@ public class Activity_SignUp extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
 
-
-
-        //##################   REGISTER   ####################
-
         Button register = findViewById(R.id.createaccount_button);
         register.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -127,7 +123,7 @@ public class Activity_SignUp extends AppCompatActivity {
                                     myRef = database.getReference("users").child(_User).child("Name");
                                     myRef.setValue(username);
 
-                                    Intent myIntent = new Intent(Activity_SignUp.this, Activity_MainMenu.class);
+                                    Intent myIntent = new Intent(Activity_SignUp.this, Activity_VerifyEmail.class);
                                     startActivity(myIntent);
                                     finish();
                                 }
